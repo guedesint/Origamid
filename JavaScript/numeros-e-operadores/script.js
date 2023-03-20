@@ -1,7 +1,11 @@
 // Qual o resultado da seguinte expressão?
 var total = 10 + 5 * 2 / 2 + 20;
+console.log(total);
 
 // Crie duas expressões que retornem NaN
+var expressao1 = 'frase' / 5;
+var expressao2 = 'teste' - 2;
+console.log(expressao1,expressao2);
 
 // Somar a string '200' com o número 50 e retornar 250
 
