@@ -7,12 +7,18 @@ var expressao1 = 'frase' / 5;
 var expressao2 = 'teste' - 2;
 console.log(expressao1,expressao2);
 
-// Somar a string '200' com o número 50 e retornar 250
+// Somar a string '200' com o número 50 e retornar 250`
+var valorString = +"200" + 50;
+console.log(valorString);
 
 // Incremente o número 5 e retorne o seu valor incrementado
 
+var x = 5
+x++
+console.log(x);
 // Como dividir o peso por 2?
-var numero = '80';
+var numero = +'80' / 2;
 var unidade = 'kg';
 var peso = numero + unidade; // '80kg'
-var pesoPorDois = peso / 2; // NaN (Not a Number)
+
+console.log(peso);
