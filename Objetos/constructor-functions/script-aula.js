@@ -1,29 +1,32 @@
-
-//var ultimoItem = videoGames.pop();
-
-// for (let numero = 0; numero <= 10; numero++) {
-//   console.log(videoGames);
-// }
-
-var i = 0;
-while (i <= 10) {
-  console.log(i);
-  i++;
+function Carro(primeiroAtt, segundoAtt) {
+  this.marca = primeiroAtt;
+  this.preco = segundoAtt;
 }
 
-var videoGames = ["Switch", "PS4", "XBOX", "3DS"];
+const honda = new Carro("honda", 1000);
+const fiat = new Carro("fiat", 2000);
 
-for (let item = 0; item < videoGames.length; item++) {
-  
-  console.log(videoGames[item]);
+function Carro2(marca, precoInical) {
+  const taxa = 1.2;
+  const precoFinal = precoInical * taxa;
+  this.marca = marca;
+  this.preco = precoFinal;
+}
 
-  if (videoGames === 'PS4') {
-    break;
+const mazda = new Carro2("mazda", 5000);
+
+
+
+
+
+function Dom(seletor) {
+  this.element = () => {
+    return document.querySelector(seletor);
+  }
+  this.ativar = (classe) => {
+    this.element().classList.add(classe)
   }
 }
 
-var frutas = ["Banana", "Pera", "Maçã", "Abacaxi", "Uva"];
-
-frutas.forEach((fruta, index, array) => {
-  console.log(fruta, index, array);
-})
+const li = new Dom('li:last-Child');
+li.ativar('classeAtivada')
