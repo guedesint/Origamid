@@ -1,13 +1,13 @@
 // Transforme o objeto abaixo em uma Constructor Function
-// function Pessoa(nome, idade) {
-//   this.nome = nome;
-//   this.idade = idade;
-//   const somaPassos = idade * 11000;
+function Pessoa(nome, idade) {
+  this.nome = nome;
+  this.idade = idade;
+  const somaPassos = idade * 11000;
 
-//   this.andou = () => {
-//     return this.nome + ` Andou ${somaPassos} Passos`;
-//   }
-// }
+  this.andou = () => {
+    return this.nome + ` Andou ${somaPassos} Passos`;
+  }
+}
 
 // const pessoa1 = new Pessoa('Gabriel', 25);
 // const pessoa2 = new Pessoa('Paola', 26);
@@ -38,19 +38,17 @@ const individo3 = new CriaPessoa('Bruno', 15);
 
 
 function Dom(seletor) {
-
-  this.element = () => {
-    return document.querySelectorAll(seletor)
-  };
+  const elementList = document.querySelectorAll(seletor);
+  this.element = elementList;
 
   this.adicionaClasse = (classe) => {
-    this.element().forEach((e) => {
+    this.element.forEach((e) => {
       e.classList.add(classe)
     });
   }
 
   this.removeClasse = (classe) => {
-    this.element().forEach((e) => {
+    this.element.forEach((e) => {
       e.classList.remove(classe)
     });
   }
