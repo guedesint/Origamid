@@ -25,3 +25,4 @@ console.log(paragrafos[paragrafos.length - 1]);
 //ou 
 console.log(paragrafos[--paragrafos.length]);
 
+ document.getElementById('')
