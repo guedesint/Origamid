@@ -1,6 +1,6 @@
-function Carro(primeiroAtt, segundoAtt) {
-  this.marca = primeiroAtt;
-  this.preco = segundoAtt;
+function Carro(marcaAtribuida, precoAtribuido) {
+  this.marca = marcaAtribuida;
+  this.preco = precoAtribuido;
 }
 
 const honda = new Carro("honda", 1000);
@@ -14,8 +14,6 @@ function Carro2(marca, precoInical) {
 }
 
 const mazda = new Carro2("mazda", 5000);
-
-
 
 
 
