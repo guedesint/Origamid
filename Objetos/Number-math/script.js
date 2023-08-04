@@ -37,3 +37,4 @@ console.log(soma.toLocaleString('pt-BR', {style: 'currency' , currency: 'BRL'}))
 
 
 limparPreco(listaPrecos[1]);
+
