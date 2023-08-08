@@ -1,65 +1,52 @@
+const comidas = ['Pizza', 'Frango', 'Carne', 'Macarrão'];
+// Remova o primeiro valor de comidas e coloque em uma variável
+// Remova o último valor de comidas e coloque em uma variável
+// Adicione 'Arroz' ao final da array
+// Adicione 'Peixe' e 'Batata' ao início da array
 
-// const precos = [49, 99, 69, 89];
-
-// const dados = [new String('Tipo 1'), ['Carro', 'Portas', {cor: 'Azul', preco: 2000}], function andar(nome) { console.log(nome) }];
-
-// dados[2]('Ford');
-// dados[1][2].cor; // azul
-
-
-// const carros =  new Array('Ford', 'Fiat', 'Honda', );
-
-// carros[2] = 'Ferrari';
-// carros[3] =  'Kia';
-// carros[20] = 'Kia2';
+const primeiraComida = comidas.shift();
+console.log(primeiraComida); //Pizza
+const ultimaComida = comidas.pop();
+console.log(ultimaComida); //Macarrao
+comidas.push('Arroz'); //['Frango', 'Carne', 'Arroz']
+comidas.unshift('Peixe'); //['Peixe', 'Frango', 'Carne', 'Arroz']
 
 
-// console.log(carros.length);
+const estudantes = ['Marcio', 'Brenda', 'Joana', 'Kleber', 'Julia'];
+// Arrume os estudantes em ordem alfabética
+// Inverta a ordem dos estudantes
+// Verifique se Joana faz parte dos estudantes
+// Verifique se Juliana faz parte dos estudantes
 
-// const li = document.querySelectorAll('li');
+estudantes.sort() // ['Brenda', 'Joana', 'Julia', 'Kleber', 'Marcio']
+estudantes.reverse()// ['Marcio', 'Kleber', 'Julia', 'Joana', 'Brenda']
+console.log(estudantes.includes('Joana'));//true
+console.log(estudantes.includes('Juliana'));//false
 
-// console.log(li);
-
-// const arrayLi = Array.from(li);
-
-// console.log(arrayLi);
-
-// const obj = {
-//   0:'Andre',
-//   1:'Rafael',
-//   2:'Teste',
-
-//   length:4,
-// }
-
-// console.log(obj);
-
-// const objArray = Array.from(obj);
-
-// console.log(objArray);
-
-// const frutas  = ['Banana', 'Pera', ['Uva Roxa', 'Uva Verde']];
-
-// console.log(frutas[2][0].length); // aqui to acessando a array dentro da array pegando o index 2 e vendo qual o tamanho do index 0 do index 2 acessando array dentro de array 
+console.log(estudantes);
 
 
-// const instrumentos = ['Guitarra', 'Baixo', 'Violão'];
-// instrumentos.sort();
-// instrumentos; // ['Baixo', 'Guitarra', Violão]
+let html = `<section>
+              <div>Sobre</div>
+              <div>Produtos</div>
+              <div>Contato</div>
+            </section>`
+// Substitua section por ul e div com li,
+// utilizando split e join
 
-// const idades = [32,21,33,43,1,12,8];
-// idades.sort();
-// idades; // [1, 12, 21, 32, 33, 43, 8]
+html = html.split('section')//retira a section
+html = html.join('ul') //adiciona  no lugar da section ul
+html = html.split('div')
+html = html.join('li')
+console.log(html);
+
+const carros = ['Ford', 'Fiat', 'VW', 'Honda'];
 
 
-// console.log(instrumentos);
-// console.log(idades);
+const cloneCarros = carros.slice()
+// Remova o último carro, mas antes de remover
+// salve a array original em outra variável
+carros.pop()
+console.log(carros);
+console.log(cloneCarros);
 
-
-const carros2 = ['Ford', 'Fiat', 'VW'];
-
-carros2.unshift('Honda', 'Kia'); // 5 // unshift adiciona um item no inicio da array e retorna quantos itens tem na array 
-carros2; // ['Honda', 'Kia', 'Ford', 'Fiat', 'VW'];
-
-carros2.push('Ferrari'); // 6 //push adiciona um item no final da array e retorna quantos itens tem na array
-carros2; // ['Honda', 'Kia', 'Ford', 'Fiat', 'VW', 'Ferrari'];
