@@ -38,6 +38,11 @@ html = html.split('section')//retira a section
 html = html.join('ul') //adiciona  no lugar da section ul
 html = html.split('div')
 html = html.join('li')
+
+//ou 
+
+// html = html.split('section').join('ul').split('div').join('li');
+
 console.log(html);
 
 const carros = ['Ford', 'Fiat', 'VW', 'Honda'];
